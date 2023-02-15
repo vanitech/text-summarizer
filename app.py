@@ -7,7 +7,6 @@ st.title("Text Summarizer")
 
 try:
   openai.api_key = os.getenv('OPENAI_KEY')
-  #openai.api_key = "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"
   assert openai.api_key , "missing key"
   # initialize state variable 
   if "summary" not in st.session_state:
